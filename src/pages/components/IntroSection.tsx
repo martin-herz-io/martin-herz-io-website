@@ -4,15 +4,20 @@ import React, {useEffect} from 'react';
 // Component
 export const IntroSection: React.FC = () => {
 
-    // Current profile image
+    // Current profile image and name
     const [profileImage, setProfileImage] = React.useState<string>("")
+    const [name, setName] = React.useState<string | null>(null)
 
-    // Fetch profile image
+    // Fetch profile image and name
     useEffect(() => {
         fetch("https://api.github.com/users/martin-herz-io")
             .then((response) => response.json())
             .then((data) => {
+                // Set profile image
                 setProfileImage(data.avatar_url);
+
+                // Set first name
+                setName(data.name.split(" ")[0].split("-")[0]);
             })
     }, []);
 
@@ -71,7 +76,7 @@ export const IntroSection: React.FC = () => {
 
             <div className={"flex gap-1 mt-2"}>
                 <p className={"text-zinc-300"}>Moin, ich bin</p>
-                <p className={"text-indigo-500"}>Martin</p>
+                <p className={"text-indigo-500"}>{name}</p>
                 <p>👋🏼</p>
             </div>
 
