@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-900 text-zinc-100 font-Josefin-Sans min-h-screen;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    @apply cursor-default;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-4;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-zinc-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-700 hover:bg-zinc-600 border-[5px] border-solid border-transparent rounded-full bg-clip-padding;
+  }
+}
+
+@layer components {
+
+}
+
+@layer utilities {
+  .tipping-point {
+    @apply border-indigo-500 border-r-2 pr-2;
+    animation: blink-caret .75s ease-in-out infinite;
+  }
+
+  @keyframes blink-caret {
+    from, to { @apply border-transparent }
+    50% { @apply border-indigo-500/40 }
+  }
+}
