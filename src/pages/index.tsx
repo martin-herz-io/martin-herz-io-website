@@ -32,6 +32,18 @@ const Home: NextPage = () => {
                     ]}
                 />
 
+                <LogoCarousel
+                    title={"Meine Kenntnisse"}
+                    logos={[
+                        "/knowledge/typescript.png",
+                        "/knowledge/nextjs.png",
+                        "/knowledge/nodejs.png",
+                        "/knowledge/mariadb.png",
+                        "/knowledge/git.png",
+                        "/knowledge/vanilla-web.png",
+                    ]}
+                />
+
                 <RepositoryList />
 
                 <Footer />
