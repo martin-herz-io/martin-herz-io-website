@@ -7,6 +7,7 @@ import {Header} from "./components/Header";
 import {Footer} from "./components/Footer";
 import {IntroSection} from "./components/IntroSection";
 import {RepositoryList} from "./components/RepositoryList";
+import {LogoCarousel} from "./components/LogoCarousel";
 
 const Home: NextPage = () => {
 
@@ -16,11 +17,20 @@ const Home: NextPage = () => {
                 <title>{`Martin-Andree Herz`}</title>
             </Head>
 
-            <main className={"flex flex-col gap-20 min-h-screen"}>
+            <main className={"flex flex-col gap-16 md:gap-32 min-h-screen"}>
 
                 <Header/>
 
                 <IntroSection />
+
+                <LogoCarousel
+                    title={"Meine Projekte & Beteiligungen"}
+                    logos={[
+                        "/projects/bettervisuals.png",
+                        "/projects/diamod.png",
+                        "/projects/catcrypter.png",
+                    ]}
+                />
 
                 <RepositoryList />
 
