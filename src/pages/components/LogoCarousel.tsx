@@ -19,14 +19,14 @@ export const LogoCarousel: React.FC<Props> = ({title, logos}) => {
                     <div className={"marquee-content"}>
                         {logos.map((logo, index) => {
                             return (
-                                <img src={logo} className={"h-6 md:h-8"} />
+                                <img key={index} alt={logo} src={logo} className={"h-6 md:h-8 saturate-0"} />
                             )
                         })}
                     </div>
                     <div className={"marquee-content"} aria-hidden={true}>
                         {logos.map((logo, index) => {
                             return (
-                                <img src={logo} className={"h-6 md:h-8"} />
+                                <img key={index} alt={logo} src={logo} className={"h-6 md:h-8 saturate-0"} />
                             )
                         })}
                     </div>
