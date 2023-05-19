@@ -37,10 +37,14 @@ export const IntroSection: React.FC = () => {
         "Brand Designer"
     ]
 
-    // Change word every 4 seconds (random word)
+    // Change word every 3.6 seconds (pick random word & not the same word twice)
     useEffect(() => {
         const interval = setInterval(() => {
-            setIndex(Math.floor(Math.random() * words.length));
+            let newIndex = Math.floor(Math.random() * words.length);
+            if (newIndex === index) {
+                newIndex = Math.floor(Math.random() * words.length);
+            }
+            setIndex(newIndex);
         }, 3600);
 
         return () => clearInterval(interval);
@@ -71,7 +75,7 @@ export const IntroSection: React.FC = () => {
 
     // HTML Return
     return (
-        <div className={"container mx-auto rounded-6xl flex flex-col items-center gap-4"}>
+        <div className={"container rounded-6xl flex flex-col items-center gap-4"}>
             <img src={profileImage} alt={"Profile image"} className={"w-36 h-36 rounded-full outline outline-offset-4 outline-2 outline-indigo-500 shadow-[0_20px_120px_-5px] shadow-indigo-500/50"} />
 
             <div className={"flex gap-1 mt-2"}>
