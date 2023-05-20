@@ -10,7 +10,7 @@ export type props = {
 }
 
 // Icons import
-import { get_ionic_line_icon, get_ionic_sharp_icon, get_ionic_solid_icon } from '../../library/ionic'; // Ionic Icons
+import { get_ionic_line_icon, get_ionic_sharp_icon, get_ionic_solid_icon } from '../library/ionic'; // Ionic Icons
 
 // Component
 export const Icon: React.FC<props> = ({ name, type, className = 'w-5', title }) => {
