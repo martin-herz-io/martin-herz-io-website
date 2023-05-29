@@ -72,6 +72,6 @@
 
   @keyframes blink-caret {
     from, to { @apply border-transparent }
-    50% { @apply border-indigo-500/40 }
+    50% { @apply border-[#9b57d5]/40 }
   }
 }

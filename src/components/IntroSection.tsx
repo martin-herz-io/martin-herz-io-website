@@ -76,17 +76,17 @@ export const IntroSection: React.FC = () => {
     // HTML Return
     return (
         <div className={"container rounded-6xl flex flex-col items-center gap-4"}>
-            <img src={profileImage} alt={"Profile image"} className={"w-36 h-36 rounded-full outline outline-offset-4 outline-2 outline-indigo-500 shadow-[0_20px_120px_-5px] shadow-indigo-500/50"} />
+            <img src={profileImage} alt={"Profile image"} className={"w-36 h-36 rounded-full outline outline-offset-4 outline-2 outline-[#9b57d5] shadow-[0_20px_120px_-5px] shadow-[#9b57d5]/50"} />
 
             <div className={"flex gap-1 mt-2"}>
                 <p className={"text-zinc-300"}>Moin, ich bin</p>
-                <p className={"text-indigo-500"}>{name}</p>
+                <p className={"text-[#9b57d5]"}>{name}</p>
                 <p>👋🏼</p>
             </div>
 
             <div className={"flex gap-1.5 text-2xl font-semibold"}>
                 <p className={"text-zinc-300 pl-2"}>Ich bin ein</p>
-                <p className={"text-indigo-500 tipping-point"}>{displayText}</p>
+                <p className={"text-[#9b57d5] tipping-point"}>{displayText}</p>
             </div>
         </div>
     )

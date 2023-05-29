@@ -14,7 +14,6 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-
                 <title>{`Martin-Andree Herz`}</title>
                 <link rel="icon" href="/Logo/Icon/colored-black.png" />
             </Head>
