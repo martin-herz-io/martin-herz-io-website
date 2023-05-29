@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269.97 269.97">
+    <defs>
+        <style>
+            .cls-1{
+                fill:none;
+                }
+            
+            .cls-1, .cls-2{
+                stroke:#ffffff;
+                stroke-miterlimit:10;
+                stroke-width:14px;
+                }
+            
+            .cls-2{
+                fill:#ffffff;
+                }
+        </style>
+    </defs>
+    
+    <g>
+        <g>
+            <rect class="cls-1" x="7" y="92.32" width="170.65" height="170.65" rx="2.61" ry="2.61" transform="translate(269.97 85.32) rotate(90)"/>
+            <rect class="cls-1" x="92.32" y="92.32" width="170.65" height="170.65" rx="85.32" ry="85.32" transform="translate(355.3 0) rotate(90)"/>
+            <rect class="cls-2" x="7" y="7" width="170.65" height="170.65" rx="85.32" ry="85.32" transform="translate(184.65 0) rotate(90)"/>
+        </g>
+    </g>
+</svg>
