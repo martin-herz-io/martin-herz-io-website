@@ -25,7 +25,7 @@ const Home: NextPage = () => {
                 <IntroSection />
 
                 <LogoCarousel
-                    title={"Meine Projekte & Beteiligungen"}
+                    title={"Meine Projekte"}
                     logos={[
                         "/projects/bettervisuals.png",
                         "/projects/diamod.png",
@@ -43,6 +43,18 @@ const Home: NextPage = () => {
                         "/knowledge/mariadb.png",
                         "/knowledge/git.png",
                         "/knowledge/vanilla-web.png",
+                    ]}
+                />
+
+                <LogoCarousel
+                    title={"Meine Tools"}
+                    logos={[
+                        "/tools/creative-cloud.png",
+                        "/tools/figma.svg",
+                        "/tools/webstorm.png",
+                        "/tools/datagrip.png",
+                        "/tools/postman.svg",
+                        "/tools/github.png",
                     ]}
                 />
 
