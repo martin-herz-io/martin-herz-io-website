@@ -1,4 +1,5 @@
 // Next imports
+import React from "react";
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
@@ -8,6 +9,7 @@ import {Footer} from "../components/Footer";
 import {IntroSection} from "../components/IntroSection";
 import {RepositoryList} from "../components/RepositoryList";
 import {LogoCarousel} from "../components/LogoCarousel";
+import {OverviewSection} from "../components/OverviewSection";
 
 const Home: NextPage = () => {
 
@@ -23,6 +25,8 @@ const Home: NextPage = () => {
                 <Header/>
 
                 <IntroSection />
+
+                <OverviewSection />
 
                 <LogoCarousel
                     title={"Meine Projekte"}
