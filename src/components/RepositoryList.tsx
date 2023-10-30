@@ -2,9 +2,6 @@
 import React from 'react';
 import {Icon} from "./Icon";
 
-// Import components
-
-
 // Component
 export const RepositoryList: React.FC = () => {
 
@@ -15,7 +12,16 @@ export const RepositoryList: React.FC = () => {
     React.useEffect(() => {
         fetch("https://api.github.com/users/martin-herz-io/repos?sort=updated")
             .then(response => response.json())
-            .then(data => setRepositoryList(data))
+            .then(data => {
+
+                // Filter github config repository
+                data = data.filter((repository: any) => {
+                    return repository.name !== "martin-herz-io"
+                })
+
+                // Set repository list
+                setRepositoryList(data)
+            })
     }, [])
 
     // HTML Return
