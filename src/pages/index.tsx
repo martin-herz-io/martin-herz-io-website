@@ -32,7 +32,6 @@ const Home: NextPage = () => {
                     title={"Meine Projekte"}
                     logos={[
                         "/projects/bettervisuals.png",
-                        "/projects/diamod.png",
                         "/projects/catcrypter.png",
                     ]}
                 />
